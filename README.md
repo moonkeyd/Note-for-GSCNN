@@ -1,4 +1,4 @@
-# Note-for-GSCNN
+﻿# Note-for-GSCNN
 make some notes for GSCNN
 
 论文名称：Gated-SCNN: Gated Shape CNNs for Semantic Segmentation
@@ -11,7 +11,7 @@ make some notes for GSCNN
 
 具体网络结构如下图：
 
-![pipeline](image/pipeline.JPG)
+![pipeline](image/pipeline.jpg)
 
 
 
@@ -34,7 +34,7 @@ Gated Convolutional Layer：self-attention的方法，希望通过regular stream
 
 2. shape stream输出与attention map点乘并通过residual block，再与channel-wise的权重相乘：
    $$
-   s_t'=(s_t\circledast w_t)=((s_t\odot \alpha_t)+s_t)^T w_t
+   s_t'=((s_t\odot \alpha_t)+s_t)^T w_t
    $$
    
 
